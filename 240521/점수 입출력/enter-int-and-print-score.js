@@ -1,5 +1,5 @@
-const fs = require("fs")
+const fs = require("fs");
 
-const input = fs.readfilesync(0).toString()
+const input = fs.readFileSync(0).toString();
 
 console.log(`Your score is ${input} point.`)
