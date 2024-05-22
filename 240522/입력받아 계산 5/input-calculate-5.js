@@ -1,5 +1,7 @@
 const fs = require("fs");
-let a = fs.readFileSync(0).toString();
-let arr = a.split(" ")
+let input = fs.readFileSync(0).toString();
+let arr = input.split(" ")
+let a = Number(arr[0])
+let b = Number(arr[1])
 
-console.log(arr[0]+arr[1]);
+console.log(a+b);
