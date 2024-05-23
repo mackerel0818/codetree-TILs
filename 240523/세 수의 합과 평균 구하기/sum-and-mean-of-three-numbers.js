@@ -4,8 +4,5 @@ let a = Number(input[0])
 let b = Number(input[1])
 let c = Number(input[2])
 
-let d = a+b+c
-let f = ((a+b+c)/3).toFixed(0)
-
-console.log(`${d}
-${f}`)
+console.log(a+b+c)
+console.log(parseInt((a+b+c)/3))
