@@ -5,7 +5,9 @@ let a = Number(input[1]);
 let list = [];
 
 for (let i = b; i >= a; i--) {
-        list.push(i);
+        if(i % 2 === 1){
+            list.push(i);
+        }
 }
 
 console.log(list.join(' '));
