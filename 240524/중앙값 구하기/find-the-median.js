@@ -1,30 +1,17 @@
-let fs = require("fs");
+const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split(" ");
-let a = Number(input[0])
-let b = Number(input[1])
-let c = Number(input[2])
-let d
 
-if (a < b) {
-    if(b < c) {
-        if(c < a){
-            console.log(c)
-        }
-    }
-}
+let a = Number(input[0]);
+let b = Number(input[1]);
+let c = Number(input[2]);
 
-if (b < a) {
-    if(a < c) {
-        if(c > b){
-            console.log(a)
-        }
-    }
-}
 
-if (a < b) {
-    if(b < c) {
-        if(a < c){
-            console.log(b)
-        }
+if (a < b && a > c || a > b && a < c) {
+    console.log(a);
+} else {
+    if (b < a && b > c || b <c && a<b) {
+        console.log(b);
+    } else {
+        console.log(c);
     }
 }
