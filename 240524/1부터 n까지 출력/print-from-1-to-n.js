@@ -6,4 +6,4 @@ for (let i=0; i<input;i++) {
     list[i] = i+1
 }
 
-console.log(list[0], list[1], list[2])
+console.log(list.toString().replaceAll(',', ' '))
